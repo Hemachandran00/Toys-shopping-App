@@ -1,0 +1,33 @@
+<div class="layout-container">
+  <div class="product-grid">
+    <div
+      class="col-md-4 col-sm-6"
+      *ngFor="let product of products; let i = index"
+    >
+      <div class="image-container">
+        <div
+          class="product-image"
+          [ngStyle]="{
+            'background-image':
+              'url(./assets/imgs/' + (product && product?.image) + ')'
+          }"
+        ></div>
+        <div class="overlay">
+          <div
+            class="button button-primary"
+            [routerLink]="onlinkname(product, product?.prodid)"
+          >
+            View Details
+          </div>
+        </div>
+      </div>
+      <div class="product-details">
+        <div class="product-brand">{{ product?.hero }}</div>
+        <div class="product-title">{{ product?.title }}</div>
+        <div *ngIf="dispdata.lisnum == 1 ? true : false" class="product-price">
+          {{ product?.price | currency: "INR":true }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

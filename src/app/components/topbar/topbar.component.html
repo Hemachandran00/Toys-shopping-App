@@ -1,0 +1,51 @@
+<div class="main-header navbar-fixed-top">
+  <div class="header-menu d-flex">
+    <div class="header-mobile-nav-wrapper">
+      <button
+        type="button"
+        class="navbar-toggle"
+        (click)="collapse = !collapse"
+      >
+        <span class="fa fa-bars fa-2x"></span>
+      </button>
+    </div>
+    <div class="header-logo-wrapper">
+      <img class="header-logo-image" src="./assets/imgs/logo.png" alt="Hero" />
+    </div>
+    <form class="form-inline my-2 my-lg-0" style="display: flex">
+      <input
+        class="form-control mr-sm-2"
+        type="search"
+        placeholder="Search"
+        aria-label="Search"
+        [(ngModel)]="textname"
+        [ngModelOptions]="{ standalone: true }"
+      />
+      <button
+        class="btn btn-outline-success my-2 my-sm-0"
+        [routerLink]="'/category/' + textname"
+        type="submit"
+      >
+        Search
+      </button>
+    </form>
+    <div class="header-nav-wrapper">
+      <ul class="header-nav">
+        <li class="header-nav-item">
+          <a routerLink="/home">HOME</a>
+        </li>
+        <li class="header-nav-item">
+          <a routerLink="/category">Category</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <ul class="mobile-header-nav" *ngIf="collapse" (click)="collapse = !collapse">
+    <li>
+      <a routerLink="/home">HOME</a>
+    </li>
+    <li>
+      <a routerLink="/category">Category</a>
+    </li>
+  </ul>
+</div>

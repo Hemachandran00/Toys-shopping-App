@@ -1,0 +1,15 @@
+<div
+  class="header-image"
+  *ngFor="let dat of datadetail"
+  [ngStyle]="{
+    'background-image': 'url(./assets/imgs/' + dat?.image + ')',
+    'background-color': 'dat?.color'
+  }"
+>
+  <div class="header-block">
+    <div class="header-text">
+      <div class="header-text-title">{{ dat?.title }}</div>
+      <p>{{ dat?.description }}</p>
+    </div>
+  </div>
+</div>

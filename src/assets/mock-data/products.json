@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Iron man",
+      "description": "Iron Man is a 2008 American superhero film based on the Marvel Comics character of the same name. Produced by Marvel Studios and distributed by Paramount Pictures, it is the first film in the Marvel Cinematic Universe",
+      "image": "iron2.png"
+    },
+    {
+        "title": "Hulk",
+        "description": "Scientist Bruce Banner is exposed to gamma radiation which has its unique side effect. During his acts of resentments, Bruce transforms into an infuriated green monster.",
+        "image": "hulk2.jpg"
+
+    },
+    {
+        "title": "Flash",
+        "description": "Barry Allen, a forensic scientist with the Central City police force, is struck by lightning in a freak accident. When he wakes up after nine months, he discovers that he can achieve great speeds.",
+        "image": "flash2.jpg"
+
+    },
+    {
+        "title": "Bat man",
+        "description": "Batman is a superhero who appears in American comic books published by DC Comics. Batman was created by artist Bob Kane and writer Bill Finger, and debuted in the 27th issue of the comic book Detective Comics on March 30, 1939",
+        "image": "bm2.jpg"
+
+    }
+    
+]
